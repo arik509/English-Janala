@@ -38,18 +38,18 @@ const displayWordDetails = (word) => {
     const detailsBox = document.getElementById("details-container");
     detailsBox.innerHTML = `
     <div class="">
-    <h2 class="text-2xl font-bold">${word.word} (<i class="fa-solid fa-microphone-lines"></i>:${word.pronunciation})</h2>
+    <h2 class="text-2xl font-bold bangla">${word.word} (<i class="fa-solid fa-microphone-lines"></i>:${word.pronunciation})</h2>
 </div>
 <div class="">
     <h2 class="font-bold">Meaning</h2>
-    <p>${word.meaning}</p>
+    <p class="bangla">${word.meaning}</p>
 </div>
 <div class="">
     <h2 class="font-bold">Example</h2>
     <p>${word.sentence}</p>
 </div>
 <div class="">
-    <h2 class="font-bold">সমার্থক শব্দ গুলো</h2>
+    <h2 class="font-bold bangla">সমার্থক শব্দ গুলো</h2>
     <div class="">${createElements(word.synonyms)}</div>
 </div>
 
